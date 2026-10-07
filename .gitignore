@@ -1,0 +1,4 @@
+# Written by Claude Code each time it loads a mod: the API's types for the editor.
+*/.claude-plugin/types/
+
+.DS_Store

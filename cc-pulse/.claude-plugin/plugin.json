@@ -1,0 +1,37 @@
+{
+  "name": "cc-pulse",
+  "version": "0.3.0",
+  "description": "Animated usage meter above the prompt: context window, rate limits, cost, and a live prompt-cache expiry countdown",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "cacheTtl": {
+      "type": "string",
+      "title": "Prompt cache TTL",
+      "description": "auto infers 5m or 1h from the environment and observed cache hits",
+      "options": [
+        "auto",
+        "5m",
+        "1h"
+      ],
+      "default": "auto"
+    },
+    "warnBeforeExpiry": {
+      "type": "boolean",
+      "title": "Toast one minute before the cache expires",
+      "description": "Shows a toast once per idle period when the prompt cache has 60 seconds left",
+      "default": true
+    },
+    "keepWarm": {
+      "type": "boolean",
+      "title": "Start sessions with keep-warm on",
+      "description": "Off: the band's 保溫 button turns keep-warm on for a session. On: every session starts with it on. Keep-warm sends one tiny request about 30 seconds before the cache expires so its TTL starts over",
+      "default": false
+    },
+    "keepWarmMax": {
+      "type": "number",
+      "title": "Keep-warm requests per idle stretch",
+      "description": "How many times keep-warm may extend the cache before it lets it lapse; your next prompt resets the count",
+      "default": 3
+    }
+  }
+}

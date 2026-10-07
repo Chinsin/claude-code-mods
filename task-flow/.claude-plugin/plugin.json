@@ -1,0 +1,6 @@
+{
+  "name": "task-flow",
+  "version": "0.1.0",
+  "description": "A side pane with Claude's plan as a task tree; quote, redirect or skip any step and Claude follows the change",
+  "types": "./types/index.d.ts"
+}
