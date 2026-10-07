@@ -9,6 +9,13 @@
 
 ## cc-pulse：用量與緩存狀態列
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/cc-pulse-dark.svg">
+  <img alt="cc-pulse：輸入框上方的狀態列，滑鼠移到 cache 上時在下方展開明細" src="docs/cc-pulse-light.svg">
+</picture>
+
+<sub>圖片是會動的 SVG，用擴展本身的繪製程式和範例資料產生：緩存倒數逐秒跳動，進度條上有光澤掃過。</sub>
+
 輸入框上方的一行：
 
 | 項目 | 內容 |
@@ -43,6 +50,11 @@
 ```
 
 ## task-flow：任務流程面板
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/task-flow-dark.svg">
+  <img alt="task-flow：側邊面板的縱向時間軸，步驟 3 進行中、步驟 4 受阻、步驟 5 已引用" src="docs/task-flow-light.svg">
+</picture>
 
 Claude 接到多步驟的需求時，會先在側邊面板畫出計畫，做的過程中逐步更新每一步的狀態。
 
